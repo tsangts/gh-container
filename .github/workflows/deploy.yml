@@ -14,8 +14,8 @@ jobs:
     env:
       MONGODB_CONNECTION_PROTOCOL: mongodb+srv
       MONGODB_CLUSTER_ADDRESS: luster0.exoueop.mongodb.net #cluster0.ntrwp.mongodb.net
-      MONGODB_USERNAME: tsangts #${{ secrets.MONGODB_USERNAME }}
-      MONGODB_PASSWORD: opHvbS1G8qnCHVua #${{ secrets.MONGODB_PASSWORD }}
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
     steps:
       - name: Get Code
